@@ -12,15 +12,23 @@
   </style>
 </head>
 <body>
-  <header>
-    <img src="image/logo.png" width="88">
-    <h1>What is Vue.js</h1>
-    <p>The Progressive Javascript Framework</p>
-  </header>
-  <footer>
-    <p id="footer">copyright 2019</p>
-  </footer>
+  <div id="app">
+    <header>
+      <img src="image/logo.png" width="88">
+      <h1>What is Vue.js</h1>
+      <p>The Progressive Javascript Framework</p>
+    </header>
+    <footer>
+      <p id="footer">copyright 2019</p>
+    </footer>
+  </div>
+ 
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script>
+    const vm = new Vue({
+      el:'#app'
+    })
+  </script>
 </body>
 </html>
